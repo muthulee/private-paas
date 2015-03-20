@@ -52,6 +52,8 @@ public class Cartridge implements Comparable<Cartridge> {
 
     //LB cluster id
     private String lbClusterId;
+    
+    private String cluterId;
 
 	private String[] accessURLs;
 	private PortMapping[] portMappings;
@@ -293,4 +295,13 @@ public class Cartridge implements Comparable<Cartridge> {
 	public void setServiceGroup(String serviceGroup) {
 		this.serviceGroup = serviceGroup;
 	}
+
+	public String getCluterId() {
+		return cluterId;
+	}
+
+	public void setCluterId(String cluterId) {
+		this.cluterId = cluterId;
+	}
+	
 }
